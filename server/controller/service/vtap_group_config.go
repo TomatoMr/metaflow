@@ -185,9 +185,6 @@ func convertDBToYaml(sData *mysql.VTapGroupConfiguration, tData *model.VTapGroup
 	copyStruct(sData, tData, ignoreName)
 	if sData.YamlConfig != nil {
 		tData.YamlConfig = sData.YamlConfig
-	} else {
-		yamlConfig := ""
-		tData.YamlConfig = &yamlConfig
 	}
 	if sData.L4LogTapTypes != nil {
 		cL4LogTapTypes, err := convertStrToIntList(*sData.L4LogTapTypes)

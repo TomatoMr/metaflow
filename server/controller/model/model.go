@@ -351,7 +351,7 @@ type VTapGroupConfiguration struct {
 	HTTPLogXRequestID             *string  `json:"HTTP_LOG_X_REQUEST_ID" yaml:"http_log_x_request_id,omitempty"`
 	ExternalAgentHTTPProxyEnabled *int     `json:"EXTERNAL_AGENT_HTTP_PROXY_ENABLED" yaml:"external_agent_http_proxy_enabled,omitempty"`
 	ExternalAgentHTTPProxyPort    *int     `json:"EXTERNAL_AGENT_HTTP_PROXY_PORT" yaml:"external_agent_http_proxy_port,omitempty"`
-	YamlConfig                    *string  `yaml:"trident.yaml"`
+	YamlConfig                    *string  `yaml:"trident.yaml,omitempty"`
 }
 
 type TypeInfo struct {
